@@ -1,0 +1,5 @@
+1.- Deploy an app
+2.- Integrate CI-CD
+3.- Run tests
+4.- storage aritact in cloud (artifactory, Nexus)
+5.- Integrate monitoring (Grafana or Nagios...)
