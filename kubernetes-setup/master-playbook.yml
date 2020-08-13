@@ -122,7 +122,7 @@
 
   - name: Install calico pod network
     become: yes
-    command: kubectl create -f /home/vagrant/calico.yml
+    command: "kubectl create -f /home/vagrant/calico.yml"
 
   # Generate kube join command for joining the node to the Kubernetes cluster and store the command in the file named join-command.
   - name: Generate join command
