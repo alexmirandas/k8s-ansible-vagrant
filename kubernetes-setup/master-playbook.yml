@@ -114,9 +114,15 @@
      - chown vagrant:vagrant /home/vagrant/.kube/config
 
   # Setup the container networking provider and the network policy engine
+  - name: Download Calico pod network
+    get_url:
+      url: https://docs.projectcalico.org/v3.4/getting-started/kubernetes/installation/hosted/calico.yaml
+      dest: /home/vagrant/calico.yaml
+      mode: '0665'
+
   - name: Install calico pod network
-    become: false
-    command: kubectl create -f https://docs.projectcalico.org/v3.4/getting-started/kubernetes/installation/hosted/calico.yaml
+    become: yes
+    command: kubectl create -f /home/vagrant/calico.yml
 
   # Generate kube join command for joining the node to the Kubernetes cluster and store the command in the file named join-command.
   - name: Generate join command
