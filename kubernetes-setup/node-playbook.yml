@@ -2,6 +2,8 @@
 - hosts: all
   become: true
   tasks:
+
+  # Install Docker and its dependent components and add user vagrant
   - name: Install packages that allow apt to be used over HTTPS
     apt:
       name: "{{ packages }}"

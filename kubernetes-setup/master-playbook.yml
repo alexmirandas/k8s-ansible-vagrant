@@ -118,10 +118,11 @@
     get_url:
       url: https://docs.projectcalico.org/v3.4/getting-started/kubernetes/installation/hosted/calico.yaml
       dest: /home/vagrant/calico.yaml
+      command: chown vagrant:vagrant /home/vagrant/calico.yaml
       mode: '0665'
 
   - name: Install calico pod network
-    become: yes
+    become: false
     command: "kubectl create -f /home/vagrant/calico.yml"
 
   # Generate kube join command for joining the node to the Kubernetes cluster and store the command in the file named join-command.
