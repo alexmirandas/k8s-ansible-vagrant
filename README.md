@@ -43,6 +43,7 @@ Upon completion of all the above steps, the Kubernetes cluster should be up and 
   $ vagrant ssh node-2
 ```
 
+```
  ___    ___
 ( _<    >_ )
 //        \\
@@ -57,5 +58,7 @@ Upon completion of all the above steps, the Kubernetes cluster should be up and 
      \\___//
       `---'
 By: Alex Miranda
+
+```
 
 
