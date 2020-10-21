@@ -42,3 +42,20 @@ Upon completion of all the above steps, the Kubernetes cluster should be up and 
   $ vagrant ssh node-1
   $ vagrant ssh node-2
 ```
+
+ ___    ___
+( _<    >_ )
+//        \\
+\\___..___//
+ `-(    )-'
+   _|__|_
+  /_|__|_\
+  /_|__|_\
+  /_\__/_\
+   \ || /  _)
+     ||   ( )
+     \\___//
+      `---'
+By: Alex Miranda
+
+
